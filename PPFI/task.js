@@ -48,4 +48,4 @@ const likert_page = {
   };
 
 /*タイムラインの設定*/
-const timeline = [fullscreen,text_page,likert_page];
+const timeline = [text_page,likert_page];
