@@ -3,7 +3,7 @@
 var text_page = {
   type: jsPsychSurveyText,
   questions: [
-    {prompt: '<div style="text-align: left;">少しの間，あなたが取り組んでいる重要な目標について考えてみてください。<br>この目標はあなたの人生におけるどんな領域でもかまいませんが，ただ1つの目標に限定してください。<br>あまり急がず，少し時間をかけて考えて選んでください。<br>目標を選んだら，次の空欄に書き出して下さい。</div>', rows: 10, columns: 150, required: true, name: 'goal'}
+    {prompt: '<div style="text-align: left;"><b>目標選択</b>: 少しの間，あなたが取り組んでいる重要な目標について考えてみてください。<br>この目標はあなたの人生におけるどんな領域でもかまいませんが，ただ1つの目標に限定してください。<br>あまり急がず，少し時間をかけて考えて選んでください。<br>目標を選んだら，次の空欄に書き出して下さい。</div>', rows: 10, columns: 150, required: true, name: 'goal'}
   ],
   button_label: '次へ',
 }
@@ -41,7 +41,7 @@ const likert_page = {
     randomize_question_order: false,
     scale: scale,
     column_header_alignment: 'bottom', 
-    preamble: '以下の文を読んで、この目標についてのあなたの考えや感情を最もよく表しているものを選んでください。＜要確認＞',
+    preamble: '以下の文を読んで，この目標についてのあなたの考えや感情を最もよく表している回答を選んでください。',
     cellpadding: 16,
     button_label: '次へ',
     autocomplete: true
