@@ -52,6 +52,23 @@ const likert_page = {
     randomize_question_order: false,
     preamble: '以下の文を読んで，この目標についてのあなたの考えや感情を最もよく表している回答を選んでください。',
     button_label: '次へ',
+    on_load: function() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .jspsych-survey-likert-statement,
+      .jspsych-survey-likert-preamble,
+      .jspsych-survey-likert-label,
+      .jspsych-survey-likert-question,
+      .jspsych-survey-likert-text {
+        text-align: left !important;
+      }
+      .jspsych-survey-likert-question {
+        justify-content: flex-start !important;
+        align-items: flex-start !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }
   };
 
 /*タイムラインの設定*/
